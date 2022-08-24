@@ -9,10 +9,25 @@ if count(a,b) <= 100:
 else:
     print(count(a,b))
 
-my_dict = {'a':5,'b':6, 'c':{'d':7,'e':8}, 'f':[1,2,3,4]}
+def rec(m):
+    while m > 0:
+        m -= 1
+        yield m
+n = iter(rec(19))
 
-for i in my_dict.items():
-    print(i)
+print(next(n))
+print(next(n))
+print(next(n))
+print(next(n))
+
+# 2 commit in Future
+# Удалил словарь из второго коммита, что посмотрим что будет дальше на выходе
+
+if a < b:
+    print("True")
+else:
+    print("Вообще неTrue")
+
 
 # Последнее изменение для ветки мастер
 print("How are you?")
